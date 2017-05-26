@@ -1,3 +1,12 @@
 * {
 	font-family: sans-serif;
 };
+
+#logo {
+	float: left;
+
+}
+
+h1 {
+	float: center;
+}
