@@ -1,0 +1,15 @@
+
+
+* {
+	font-family: sans-serif;
+	background-color: red;
+};
+
+#logo {
+	float: left;
+
+}
+
+h1 {
+	float: center;
+}
