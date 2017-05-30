@@ -44,8 +44,8 @@ article {
 }
 
 img {
- 
-  display: block;
+ 	max-width:100%;
+  	display: block;
     margin: 20px auto;
 }
 h2 {
