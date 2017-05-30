@@ -1,7 +1,10 @@
 
 
 body {
+<<<<<<< HEAD
+=======
 	padding-bottom: 70px; 
+>>>>>>> origin
 	font-family: sans-serif;
 	background-color: slategrey;
 }
@@ -15,6 +18,12 @@ body {
 h1 {
 	
 	color: red;
+<<<<<<< HEAD
+}
+
+h2 {
+	text-align: center;
+=======
 	text-align:  center;
 }
 
@@ -35,8 +44,8 @@ article {
 }
 
 img {
- 
-  display: block;
+ 	max-width:100%;
+  	display: block;
     margin: 20px auto;
 }
 h2 {
@@ -91,4 +100,5 @@ nav {
         }
     }
   }
+>>>>>>> origin
 }
