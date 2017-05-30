@@ -1,6 +1,10 @@
 
 
 body {
+<<<<<<< HEAD
+=======
+	padding-bottom: 70px; 
+>>>>>>> origin
 	font-family: sans-serif;
 	background-color: slategrey;
 }
@@ -14,8 +18,87 @@ body {
 h1 {
 	
 	color: red;
+<<<<<<< HEAD
 }
 
 h2 {
 	text-align: center;
+=======
+	text-align:  center;
+}
+
+h2 {
+	display: block;
+    margin: 20px auto;
+	text-align: center;
+}
+
+body { 
+	
+}
+article {
+	margin: 3%;
+	width: 27%;
+	border: 1px solid lightgrey;
+	display: inline-block;
+}
+
+img {
+ 
+  display: block;
+    margin: 20px auto;
+}
+h2 {
+	text-align: center;
+
+}
+
+nav {
+ 	justify-content: center;
+ }
+ nav, .nav-pills, .nav-justified {
+ 	background-color: #fff;
+ }
+
+
+.productTitle {
+	border-top: 1px dotted lightgrey;
+	border-bottom: 1px dotted lightgrey;
+}
+
+.productImage {
+	justify-content: : center;
+}
+
+.price {
+	font-weight: bold;
+}
+
+.availability {
+	width: 100%;
+	background-color: darkgrey;
+	color: yellow;
+}
+
+.priceBanner {
+	background-color: lightgrey;
+	border-top: 1px dotted lightgrey;
+	border-bottom: 1px dotted lightgrey;
+}
+#navbar-primary.navbar-default {
+  background: transparent;
+  border: none;
+  .navbar-nav { 
+    width: 100%;
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+    }
+  }
+>>>>>>> origin
 }
