@@ -48,3 +48,114 @@ var products = [
 		imgUrl: "http://www.kiplinger.com/slideshow/taxes/T054-S001-most-overlooked-tax-breaks-new-parents/images/intro.jpg"
 	}
 ];
+
+//var currentProduct = "";
+
+// Get a reference to the appropriate DOM element for products
+var productsDiv = document.getElementById('products');
+
+for (var loopTracker = 0; loopTracker < products.length; loopTracker += 1) {
+
+	// set current product to the index of looptracker
+	var currentProduct = products[loopTracker];
+
+	console.log(currentProduct.name);
+
+	// create article element for product
+	var productArticleTag = document.createElement('article');
+	console.log(productArticleTag);
+
+	var productArticleTitleHeaderTag = document.createElement('header');
+	console.log(productArticleTitleHeaderTag);
+
+	var productArticleTitleH2Tag = document.createElement('h2');
+	console.log(productArticleTitleH2Tag);
+
+	var productImageSectionTag = document.createElement('section');
+	console.log(productImageSectionTag);
+
+	var productImageTag = document.createElement('img');
+	console.log(productImageTag);
+
+	productImageTag.className = "productImage";
+	productImageTag.src = currentProduct.imgUrl;
+	console.log(productImageTag);
+
+	productImageSectionTag.appendChild(productImageTag);
+	console.log(productImageSectionTag);
+
+	productArticleTitleH2Tag.className = "productTitle";
+	console.log(productArticleTitleH2Tag);
+
+	var productTitleH2Text = document.createTextNode(currentProduct.name);
+	console.log(productTitleH2Text);
+
+	productArticleTitleH2Tag.appendChild(productTitleH2Text);
+	console.log(productArticleTitleH2Tag);
+
+	productArticleTitleHeaderTag.appendChild(productArticleTitleH2Tag);
+	console.log(productArticleTitleHeaderTag);
+
+	productArticleTag.appendChild(productArticleTitleHeaderTag);
+	console.log(productArticleTag);
+
+	productArticleTag.appendChild(productImageSectionTag);
+	console.log(productArticleTag);
+
+	var productDescriptionSectionTag = document.createElement('section')
+	console.log(productDescriptionSectionTag);
+
+	var productDescriptionHeaderTag = document.createElement('header');
+	console.log(productDescriptionHeaderTag);
+
+	productDescriptionHeaderTag.innerHTML = 'Description';
+	console.log(productDescriptionHeaderTag);
+
+	productDescriptionSectionTag.appendChild(productDescriptionHeaderTag);
+	console.log(productDescriptionSectionTag);
+
+	var productDescriptionTextTag = document.createElement('p');
+	console.log(productDescriptionTextTag);
+
+	var productDescriptionText = document.createTextNode(currentProduct.description);
+	console.log(productDescriptionText);
+
+	productDescriptionTextTag.appendChild(productDescriptionText);
+	console.log(productDescriptionTextTag);
+
+	productDescriptionTextTag.className = "description";
+	console.log(productDescriptionTextTag);
+
+	productDescriptionSectionTag.appendChild(productDescriptionTextTag);
+	console.log(productDescriptionSectionTag);
+
+	productArticleTag.appendChild(productDescriptionSectionTag);
+
+
+	var productPriceSectionTag = document.createElement('section');
+	console.log(productPriceSectionTag);
+
+	var productPriceHeaderTag = document.createElement('header');
+	console.log(productPriceHeaderTag);
+
+	var productPriceNumberTag = document.createElement('p');
+	console.log(productPriceNumberTag);
+
+	productPriceNumberTag.className = "priceFigure";
+
+	var productPriceNumberText = document.createTextNode(currentProduct.price);
+	console.log(productPriceNumberText);
+
+	productPriceNumberTag.appendChild(productPriceNumberText);
+	console.log(productPriceNumberTag);
+
+	productPriceSectionTag.appendChild(productPriceHeaderTag);
+
+	productPriceSectionTag.appendChild(productPriceNumberTag);
+	console.log(productPriceSectionTag);
+
+	productArticleTag.appendChild(productPriceSectionTag);
+
+	productsDiv.appendChild(productArticleTag);
+
+}
