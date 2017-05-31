@@ -144,8 +144,9 @@ for (var loopTracker = 0; loopTracker < products.length; loopTracker += 1) {
 	// append product description to the product article
 	productArticleTag.appendChild(productDescriptionSectionTag);
 
-	// create product price section
+	// create product price section and set class
 	var productPriceSectionTag = document.createElement('section');
+	productPriceSectionTag.className = "price-bottom";
 	//console.log(productPriceSectionTag);
 
 	// create product price header
