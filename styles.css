@@ -4,10 +4,10 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	padding-bottom: 70px; 
-	background-image: url("http://cdn.wallpapersafari.com/80/76/KLsPa2.jpg");
+	background-image: url("http://earlyadventures.co.nz/wp-content/uploads/2012/12/bg31.jpg");
 	background-repeat: none;
 	background-position: fixed;
-	background-size: fixed;
+	background-size: cover;
 	background-attachment: fixed;
 
 }
@@ -32,6 +32,7 @@ h2 {
 	display: block;
 	margin: 20px auto;
 	text-align: center;
+	font-size: 2.7rem;
 }
 
 article {
@@ -63,14 +64,15 @@ img {
 nav, .nav-pills, .nav-justified a {
 
 	font-size: 2rem;
-	color: red;
+	color: black;
 	font-family: font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
 
 nav, .nav-pills, .nav-justified > li > a:hover, nav, 
 .nav-pills, .nav-justified > li > a:focus {
 	background-color: #fff;
-	color: #000;
+	color: #89BDBB;
 }
 
 
@@ -81,11 +83,13 @@ nav, .nav-pills, .nav-justified > li > a:hover, nav,
 .productTitle {
 	
 	border-bottom: 1px dotted lightgrey;
+	color: #89BDBB;
+	text-shadow: 1.7px 1.7px black;
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
+	width: 250px;
+	height: 150px;
 
 }
 .page-header {
@@ -124,6 +128,10 @@ p .description {
 	padding-right: 20%;
 }
 
+li a.active {
+	background-color: transparent;
+	text-decoration: underline;
+}
 /** ID's
 ---------------------------------------------------------*/
 
@@ -138,7 +146,7 @@ p .description {
 
 #banner h1 {
 	color: black;
-	text-shadow: .5px .5px #ff0000;
+	text-shadow: 3px 3px #89BDBB;
 }
 
 #home {
