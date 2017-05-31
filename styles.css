@@ -45,6 +45,7 @@ article {
 	max-height: 700px;
 	vertical-align: top;
 	background-color: #fff;
+	position: relative;
 }
 article h2 {
 	font-size: 3em;
@@ -128,6 +129,16 @@ p .description {
 	padding-right: 20%;
 }
 
+li a.active {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.price-bottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
 		background-color: #89BDBB;
 		color: white;
