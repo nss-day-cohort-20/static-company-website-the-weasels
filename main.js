@@ -49,108 +49,135 @@ var products = [
 	}
 ];
 
-//var currentProduct = "";
 
 // Get a reference to the appropriate DOM element for products
 var productsDiv = document.getElementById('products');
 
+// loop to create each product
 for (var loopTracker = 0; loopTracker < products.length; loopTracker += 1) {
 
 	// set current product to the index of looptracker
 	var currentProduct = products[loopTracker];
-
-	console.log(currentProduct.name);
+	//console.log(currentProduct.name);
 
 	// create article element for product
 	var productArticleTag = document.createElement('article');
-	console.log(productArticleTag);
+	//console.log(productArticleTag);
 
+	// create header element to contain title
 	var productArticleTitleHeaderTag = document.createElement('header');
-	console.log(productArticleTitleHeaderTag);
+	//console.log(productArticleTitleHeaderTag);
 
+	// create h2 element of actuall title
 	var productArticleTitleH2Tag = document.createElement('h2');
-	console.log(productArticleTitleH2Tag);
+	//console.log(productArticleTitleH2Tag);
 
+	// create section element to contain image
 	var productImageSectionTag = document.createElement('section');
-	console.log(productImageSectionTag);
+	//console.log(productImageSectionTag);
 
+	// create actuall product image element
 	var productImageTag = document.createElement('img');
-	console.log(productImageTag);
+	//console.log(productImageTag);
 
+	// set src and class for image element
 	productImageTag.className = "productImage";
 	productImageTag.src = currentProduct.imgUrl;
-	console.log(productImageTag);
+	//console.log(productImageTag);
 
+	// append image element to it's section
 	productImageSectionTag.appendChild(productImageTag);
-	console.log(productImageSectionTag);
+	//console.log(productImageSectionTag);
 
+	// set class of title h2
 	productArticleTitleH2Tag.className = "productTitle";
-	console.log(productArticleTitleH2Tag);
+	//console.log(productArticleTitleH2Tag);
 
+	// create h2 title text
 	var productTitleH2Text = document.createTextNode(currentProduct.name);
-	console.log(productTitleH2Text);
+	//console.log(productTitleH2Text);
 
+	// append text to h2 element
 	productArticleTitleH2Tag.appendChild(productTitleH2Text);
-	console.log(productArticleTitleH2Tag);
+	//console.log(productArticleTitleH2Tag);
 
+	// append h2 to header
 	productArticleTitleHeaderTag.appendChild(productArticleTitleH2Tag);
-	console.log(productArticleTitleHeaderTag);
+	//console.log(productArticleTitleHeaderTag);
 
+	// append header to product article
 	productArticleTag.appendChild(productArticleTitleHeaderTag);
-	console.log(productArticleTag);
+	//console.log(productArticleTag);
 
+	// append image to it's section
 	productArticleTag.appendChild(productImageSectionTag);
-	console.log(productArticleTag);
+	//console.log(productArticleTag);
 
+	// create product description section element
 	var productDescriptionSectionTag = document.createElement('section')
-	console.log(productDescriptionSectionTag);
+	//console.log(productDescriptionSectionTag);
 
+	// create product description header element
 	var productDescriptionHeaderTag = document.createElement('header');
-	console.log(productDescriptionHeaderTag);
+	//console.log(productDescriptionHeaderTag);
 
-
+	// create product description paragraph element
 	var productDescriptionTextTag = document.createElement('p');
-	console.log(productDescriptionTextTag);
+	//console.log(productDescriptionTextTag);
 
+	// create product description text
 	var productDescriptionText = document.createTextNode(currentProduct.description);
-	console.log(productDescriptionText);
+	//console.log(productDescriptionText);
 
+	// append product description text to it's element
 	productDescriptionTextTag.appendChild(productDescriptionText);
-	console.log(productDescriptionTextTag);
+	//console.log(productDescriptionTextTag);
 
+	// set product description element class
 	productDescriptionTextTag.className = "description";
-	console.log(productDescriptionTextTag);
+	//console.log(productDescriptionTextTag);
 
+	// append product description element to its section
 	productDescriptionSectionTag.appendChild(productDescriptionTextTag);
-	console.log(productDescriptionSectionTag);
+	//console.log(productDescriptionSectionTag);
 
+	// append product description to the product article
 	productArticleTag.appendChild(productDescriptionSectionTag);
 
-
+	// create product price section
 	var productPriceSectionTag = document.createElement('section');
-	console.log(productPriceSectionTag);
+	//console.log(productPriceSectionTag);
 
+	// create product price header
 	var productPriceHeaderTag = document.createElement('header');
-	console.log(productPriceHeaderTag);
+	//console.log(productPriceHeaderTag);
 
+	// create product price paragraph element
 	var productPriceNumberTag = document.createElement('p');
-	console.log(productPriceNumberTag);
+	//console.log(productPriceNumberTag);
 
+	// set price paragraph class
 	productPriceNumberTag.className = "priceFigure";
 
+	// create price text
 	var productPriceNumberText = document.createTextNode(currentProduct.price);
-	console.log(productPriceNumberText);
+	//console.log(productPriceNumberText);
 
+	// append price text to paragraph
 	productPriceNumberTag.appendChild(productPriceNumberText);
-	console.log(productPriceNumberTag);
+	//console.log(productPriceNumberTag);
 
+	// append price header to its section
 	productPriceSectionTag.appendChild(productPriceHeaderTag);
 
+	// append price paragraph to it section
 	productPriceSectionTag.appendChild(productPriceNumberTag);
-	console.log(productPriceSectionTag);
+	//console.log(productPriceSectionTag);
 
+	// append price section to article element
 	productArticleTag.appendChild(productPriceSectionTag);
 
+	// append article element to the div
 	productsDiv.appendChild(productArticleTag);
 
 }
