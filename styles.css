@@ -1,104 +1,146 @@
-
+/** page elements
+---------------------------------------------------------*/
 
 body {
-<<<<<<< HEAD
-=======
+	font-family: 'Roboto', sans-serif;
 	padding-bottom: 70px; 
->>>>>>> origin
-	font-family: sans-serif;
-	background-color: slategrey;
+	background-image: url("http://cdn.wallpapersafari.com/80/76/KLsPa2.jpg");
+	background-repeat: none;
+	background-position: fixed;
+	background-size: fixed;
+	background-attachment: fixed;
+
+}
+
+body h1 {
+	text-align:  center;
+	font-family: 'Roboto Slab', serif;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	color: red;
+	font-family: 'Roboto', serif;
+	font-size: 4em;
+}
+
+
+h2 {
+	text-align:  center;
+	font-family: 'Roboto Slab', serif;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+}
+
+article {
+	overflow: none;
+	margin: 3%;
+	width: 27%;
+	border: 1px solid lightgrey;
+	display: inline-block;
+	min-height: 650px;
+	max-height: 700px;
+	vertical-align: top;
+	background-color: #fff;
+}
+article h2 {
+	font-size: 3em;
+}
+
+p {
+	text-align: center;
+	margin: 5%;
+}
+
+
+img {
+	display: block;
+	margin: 20px auto;
+}
+
+nav, .nav-pills, .nav-justified a {
+
+	font-size: 2rem;
+	color: red;
+	font-family: font-family: 'Roboto', sans-serif;
+}
+
+nav, .nav-pills, .nav-justified > li > a:hover, nav, 
+.nav-pills, .nav-justified > li > a:focus {
+	background-color: #fff;
+	color: #000;
+}
+
+
+/** Classes
+---------------------------------------------------------*/
+
+
+.productTitle {
+	
+	border-bottom: 1px dotted lightgrey;
 }
 
 .logo {
 	width: 100px;
 	height: 100px;
-	border: 1px solid red;
+
+}
+.page-header {
+	background-color: #fff;
+	vertical-align: top;
+	padding-top: 300px;
 }
 
-h1 {
-	
-	color: red;
-<<<<<<< HEAD
-}
-
-h2 {
+p .description {
 	text-align: center;
-=======
-	text-align:  center;
+	padding: 5%;
+	font-size: 2rem;
 }
 
-h2 {
-	display: block;
-    margin: 20px auto;
-	text-align: center;
-}
-
-body { 
-	
-}
-article {
-	margin: 3%;
-	width: 27%;
-	border: 1px solid lightgrey;
-	display: inline-block;
-}
-
-img {
- 	max-width:100%;
-  	display: block;
-    margin: 20px auto;
-}
-h2 {
-	text-align: center;
-
-}
-
-nav {
- 	justify-content: center;
- }
- nav, .nav-pills, .nav-justified {
- 	background-color: #fff;
- }
-
-
-.productTitle {
+.priceFigure {
 	border-top: 1px dotted lightgrey;
-	border-bottom: 1px dotted lightgrey;
+	text-align: center;
+	font-size: 6em;
 }
 
 .productImage {
-	justify-content: : center;
+	max-width:100%;
+	max-height: 174px;
+	display: block;
+	margin: 20px auto;
 }
 
-.price {
-	font-weight: bold;
+.aboutText {
+	font-size: 2rem;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
-.availability {
-	width: 100%;
-	background-color: darkgrey;
-	color: yellow;
+.homeText {
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
-.priceBanner {
-	background-color: lightgrey;
-	border-top: 1px dotted lightgrey;
-	border-bottom: 1px dotted lightgrey;
+/** ID's
+---------------------------------------------------------*/
+
+#Contact {
+	text-align: center;
+	font-size: 4em;
 }
-#navbar-primary.navbar-default {
-  background: transparent;
-  border: none;
-  .navbar-nav { 
-    width: 100%;
-    text-align: center;
-    > li {
-      display: inline-block;
-      float: none;
-      > a {
-        padding-left: 30px;
-        padding-right: 30px;
-        }
-    }
-  }
->>>>>>> origin
+
+#banner {
+	padding-top: 20px; 
+}
+
+#banner h1 {
+	color: black;
+	text-shadow: .5px .5px #ff0000;
+}
+
+#home {
+	font-size: 2rem;
 }
